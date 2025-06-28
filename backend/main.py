@@ -9,7 +9,7 @@ app = FastAPI()
 # CORS middleware to allow requests from the frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for simplicity, adjust as needed
+    allow_origins=["https://data-digest.vercel.app"],  # Allow all origins for simplicity, adjust as needed
     # allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
